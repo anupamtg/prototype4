@@ -1,8 +1,61 @@
+<nav class="navbar navbar-expand-lg navbar-light  bg-white fixed-top">
+  <div class="container-fluid">
+    <div class="b ">
+        <a class="navbar-brand " href="#">Book Stop </a>
+        </div>
+
+
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYot-GY6oMBonMBvxMVbkwZwum-nVIDIbD0A&usqp=CAU" alt="" width="30" height="24">
+
+    </a>
+  </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active mr-auto" aria-current="page" href="#">Home</a>
+        </li>
+        <li>
+        <div class="dropdown">
+          <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Programming</a>
+            <a class="dropdown-item" href="#">Cooking</a>
+            <a class="dropdown-item" href="#">Literature</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active mr-auto" routerLink="user/register" routerLinkActive="active" aria-current="page" href="/">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active mr-auto" routerLink="user/login" routerLinkActive="active" aria-current="page" href="/">Login</a>
+      </li>
+
+
+
+
+      </ul>
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+
 <div *ngIf="!loading" class="container-fluid hero-page1">
   <div class="container">
     <div class="row justify-content-center align-items-center">
       <div class="col-lg-12 col-md-12 col-sm-12">
-        <h1>Search to know more about your favourite books</h1>
+        <h1>Search books</h1>
         <input
           [formControl]="queryField"
           id="keyword"
@@ -26,7 +79,7 @@
           [formControl]="queryField"
           type="search"
           id="keyword"
-          placeholder="search for artists..."
+          placeholder="search"
           typeahead-wait-ms="delay"
           autocomplete="off"
         />
@@ -61,14 +114,4 @@
   </div>
 </div>
 
-<footer
-  class="bg-dark mt-5"
-  style="min-height:30vh; width:100%; color: white; font-size:20px"
->
-  <div
-    class="row justify-content-center align-items-center m-0"
-    style="min-height:30vh;"
-  >
-    <p>Proudly Coded By @fey_vik vivian woka</p>
-  </div>
-</footer>
+
